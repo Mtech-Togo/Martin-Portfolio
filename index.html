@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio personnel d'Alitoh Martin ALABIDJARE - Développeur Web et Technicien en Informatique">
+    <meta name="keywords" content="portfolio, développement web, HTML, CSS, JavaScript, IT">
+    <meta name="author" content="Alitoh Martin ALABIDJARE">
+    <title>Portfolio - Alitoh Martin ALABIDJARE</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête Navigation -->
+    <header class="entete">
+        <nav class="barre-navigation">
+            <div class="conteneur-logo">
+                <img src="img/photo_profil.png" alt="Logo" class="logo">
+                <span class="nom-site">ALABIDJARE <span class="prenom-site">Alitoh Martin</span></span>
+            </div>
+
+            <!-- Menu Desktop -->
+            <div class="menu-desktop" id="menuDesktop">
+                <a href="#accueil" class="lien-menu actif" onclick="naviguerVers('accueil')">Accueil</a>
+                <a href="#apropos" class="lien-menu" onclick="naviguerVers('apropos')">À propos</a>
+                <a href="#projets" class="lien-menu" onclick="naviguerVers('projets')">Projets</a>
+                <a href="#competences" class="lien-menu" onclick="naviguerVers('competences')">Compétences</a>
+                <a href="#contact" class="lien-menu" onclick="naviguerVers('contact')">Contact</a>
+            </div>
+
+            <!-- Bouton Menu Mobile -->
+            <button class="bouton-menu-mobile" id="boutonMenuMobile" onclick="basculerMenuMobile()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Menu Mobile -->
+        <div class="menu-mobile" id="menuMobile">
+            <a href="#accueil" class="lien-menu-mobile" onclick="naviguerVers('accueil')">Accueil</a>
+            <a href="#apropos" class="lien-menu-mobile" onclick="naviguerVers('apropos')">À propos</a>
+            <a href="#projets" class="lien-menu-mobile" onclick="naviguerVers('projets')">Projets</a>
+            <a href="#competences" class="lien-menu-mobile" onclick="naviguerVers('competences')">Compétences</a>
+            <a href="#contact" class="lien-menu-mobile" onclick="naviguerVers('contact')">Contact</a>
+        </div>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="section section-accueil">
+        <div class="conteneur">
+            <div class="grille-accueil">
+                <div class="contenu-accueil">
+                    <h2 class="titre-principal">
+                        Bonjour, Je suis <span class="accent">Alitoh Martin ALABIDJARE</span>, Technicien Supérieur en Informatique & Développeur Web Freelance.
+                    </h2>
+                    <h3 class="Bienvenue">Bienvenue sur mon portfolio !</h3>
+                    <p class="description-accueil">
+                        Technicien Supérieur en Informatique avec 5 ans d'expérience en gestion IT et
+                        développement web. Prêt à transformer vos idées en réalité numérique.
+                    </p>
+                    <button class="bouton-principal" onclick="naviguerVers('projets')">
+                        Voir mes projets
+                    </button>
+                </div>
+                <div class="illustration-accueil">
+                    <div class="boite-illustration">
+                        <div class="icone-illustration">💻</div>
+                        <p>IA | Administrateur Réseaux | Développeur Web & Design | Sécurité Informatique | Maintenance | Marketing Digital | Support IT </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="section section-apropos">
+        <div class="conteneur">
+            <h2 class="titre-section">
+                À <span class="accent">propos</span>
+            </h2>
+
+            <div class="grille-apropos">
+                <div class="contenu-apropos p1">
+                    <p class="texte-apropos">
+                        Je m'appelle <strong>Alitoh Martin ALABIDJARE, <i>technicien supérieur en informatique, développeur Web et superviseur de projets IT</i></strong> basé à Lomé, au <strong>Togo.</strong> Trilingue <strong>(Français: DALF C2, Anglais, Kabiyè)</strong> et <strong>certifié en informatique:</strong> <i>CompTIA Security+ (SY0-601, LinkedIn), ISO 27001 (LinkedIn), CISCO Networking Academy-Cybersécurité (CISCO), Réseaux TCP/IP (Intech-Paris), Microsoft Windows 10 Entreprise (Microsoft), Gestion de Projet IT et Marketing Digital (Google)</i>. Je cumule <strong>cinq années d’expérience</strong> dans la gestion d’infrastructures IT, le développement web, la communication digitale et la supervision de projets biométriques à fort impact social. J’accompagne entreprises, institutions et porteurs de projets dans leur transformation numérique.
+                    </p>
+                </div>
+                <div class="contenu-apropos p2">
+                    <p class="texte-apropos">
+                        Polyvalent et rigoureux, je peux intervenir aussi bien en freelance qu’en télétravail pour des structures locales et internationales, en assurant <strong>la maintenance informatique, la gestion d’infrastructures réseau, la création de sites web sur mesure (modernes et interactifs), le support IT, la mise en place de solutions de sécurité</strong> (vidéosurveillance, contrôle d’accès, alarmes, VPN, IDS, audits ISO 27001) et <strong>la production de contenus digitaux adaptés aux besoins de chaque client.</strong> Mon objectif est de proposer des <strong>solutions fiables, ergonomiques et évolutives,</strong> tout en garantissant la confidentialité, la performance et la satisfaction client.
+                    </p>
+                </div>
+                <div class="contenu-apropos p3">
+                    <p class="texte-apropos">
+                        <strong class="accent">CE QUE JE PROPOSE :</strong><br>
+                        <strong>-</strong> Supervision de projets numériques et biométriques<br>
+                        <strong>-</strong> Administration réseau (Cisco, MikroTik, Tp-Link), VPN, VLAN, ACL, Firewalls<br>
+                        <strong>-</strong> Développement web (WordPress, Joomla, PrestaShop, HTML/CSS, JavaScript)<br>
+                        <strong>-</strong> Maintenance et sécurisation de parcs informatiques (serveurs, imprimantes, caméras, postes clients)<br>
+                        <strong>-</strong> Création de contenus visuels et vidéos publicitaires pour les réseaux sociaux<br>
+                        <strong>-</strong> Prospection digitale et accompagnement stratégique<br>
+                        <strong>-</strong> Optimisation des performances et automatisation via IA (chatbots, scripts, outils de veille)<br>
+                        Chaque projet est unique et mérite une attention sur mesure. Je m’engage à fournir des <strong>solutions fiables, ergonomiques et évolutives,</strong> tout en restant fidèle à l’identité de votre marque et aux exigences du terrain.
+                    </p>
+                    <a href="doc/CV_Alitoh Martin ALABIDJARE.pdf" target="_blank">
+                    <button class="bouton-principal">
+                        Télécharger mon CV
+                    </button>
+                    </a>
+                </div>
+
+                <div class="photo-profil-conteneur">
+                    <img src="img/photo_profil.png" alt="Photo de profil" class="photo-profil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section section-projets">
+        <div class="conteneur">
+            <h2 class="titre-section">
+                Mes <span class="accent">Projets</span>
+            </h2>
+
+            <div class="grille-projets">
+                <!-- Projet 1 -->
+                <div class="carte-projet">
+                    <div class="image-projet">
+                        <img src="img/projet_1.png" alt="Développement Web Moderne">
+                        <div class="overlay-projet">
+                            <span>Voir le projet</span>
+                        </div>
+                    </div>
+                    <div class="contenu-carte">
+                        <h3 class="titre-projet">Développement Web Moderne</h3>
+                        <p class="description-projet">
+                            Quelques Projet réalisés en Programmation Web
+                        </p>
+                        <div class="tags-projet">
+                            <span class="tag">#html</span>
+                            <span class="tag">#css</span>
+                            <span class="tag">#js</span>
+                        </div>
+                        <button class="bouton-voir">Voir</button>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="carte-projet">
+                    <div class="image-projet">
+                        <img src="img/projet_2.png" alt="Infrastructure IT">
+                        <div class="overlay-projet">
+                            <span>Voir le projet</span>
+                        </div>
+                    </div>
+                    <div class="contenu-carte">
+                        <h3 class="titre-projet">Infrastructure IT</h3>
+                        <p class="description-projet">
+                            Mes projets en Systèmes-Réseaux Informatique, Maintenance & Sécurité
+                        </p>
+                        <div class="tags-projet">
+                            <span class="tag">#Réseau</span>
+                            <span class="tag">#Sécurité</span>
+                            <span class="tag">#Maintenance</span>
+                        </div>
+                        <button class="bouton-voir">Voir</button>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="carte-projet">
+                    <div class="image-projet">
+                        <img src="img/projet_3.png" alt="Système Biométrique">
+                        <div class="overlay-projet">
+                            <span>Voir le projet</span>
+                        </div>
+                    </div>
+                    <div class="contenu-carte">
+                        <h3 class="titre-projet">Système Biométrique</h3>
+                        <p class="description-projet">
+                            Mes expériences en Biométrie
+                        </p>
+                        <div class="tags-projet">
+                            <span class="tag">#Analyste DBA</span>
+                            <span class="tag">#Dédoublonnage</span>
+                            <span class="tag">#Formation</span>
+                        </div>
+                        <button class="bouton-voir">Voir</button>
+                    </div>
+                </div>
+
+                    <!-- Projet 4 -->
+                <div class="carte-projet">
+                    <div class="image-projet">
+                        <img src="img/projet_4.jpg" alt="Système Biométrique">
+                        <div class="overlay-projet">
+                            <span>Voir le projet</span>
+                        </div>
+                    </div>
+                    <div class="contenu-carte">
+                        <h3 class="titre-projet"></h3>
+                        <p class="description-projet">
+                            Quelques Production visuels
+                        </p>
+                        <div class="tags-projet">
+                            <span class="tag">#IA</span>
+                            <span class="tag">#Adobe Illustrator</span>
+                            <span class="tag">#Adobe Première Pro</span>
+                            <span class="tag">#Canva</span>
+                        </div>
+                        <button class="bouton-voir">Voir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section section-competences">
+        <div class="conteneur">
+            <h2 class="titre-section">
+                Mes <span class="accent">Compétences</span>
+            </h2>
+
+            <div class="grille-competences">
+                <!-- Soft Skills -->
+                <div class="boite-competences">
+                    <h3 class="titre-competences">Soft Skills</h3>
+                    <div class="liste-competences">
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">Gestion de projet</span>
+                                <span class="pourcentage-competence">85%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">Résolution de problème</span>
+                                <span class="pourcentage-competence">90%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">Adaptabilité</span>
+                                <span class="pourcentage-competence">88%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hard Skills -->
+                <div class="boite-competences">
+                    <h3 class="titre-competences">Hard Skills (Développement Web)</h3>
+                    <div class="liste-competences">
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">HTML/CSS</span>
+                                <span class="pourcentage-competence">95%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">Wordpress/PrestaShop</span>
+                                <span class="pourcentage-competence">90%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">JavaScript</span>
+                                <span class="pourcentage-competence">85%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">VS Code</span>
+                                <span class="pourcentage-competence">95%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hard Skills (Systèmes et Réseaux) -->
+                <div class="boite-competences">
+                    <h3 class="titre-competences">Hard Skills (Systèmes & Réseaux)</h3>
+                    <div class="liste-competences">
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">Windows Server</span>
+                                <span class="pourcentage-competence">90%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">Linux (Ubuntu, Mint, Kali)</span>
+                                <span class="pourcentage-competence">80%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">VLAN/VPN/ACL/Firewalls</span>
+                                <span class="pourcentage-competence">80%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hard Skills (Outils & Logiciels) -->
+                <div class="boite-competences">
+                    <h3 class="titre-competences">Hard Skills (Outils & Logiciels)</h3>
+                    <div class="liste-competences">
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">VMware/Cisco Packet Tracer</span>
+                                <span class="pourcentage-competence">95%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">Wireshark/Nagios/GLPI/Snort/Edraw Max</span>
+                                <span class="pourcentage-competence">80%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="item-competence">
+                            <div class="entete-competence">
+                                <span class="nom-competence">WampServer/MySQL/FileZilla/Adobe Illustrator & Première Pro</span>
+                                <span class="pourcentage-competence">80%</span>
+                            </div>
+                            <div class="barre-competence">
+                                <div class="barre-remplie" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section section-contact">
+        <div class="conteneur">
+            <h2 class="titre-section titre-contact">
+                Vous avez un <span class="accent">projet en tête</span> ?
+            </h2>
+            <p class="sous-titre-contact">
+                N'hésitez pas à me <span class="accent">contacter</span>
+            </p>
+
+            <div class="grille-contact">
+                <div class="formulaire-contact">
+                    <form id="formulaireContact" onsubmit="gererEnvoiFormulaire(event)">
+                        <div class="groupe-inputs">
+                            <div class="groupe-input">
+                                <input type="text" id="prenom" name="prenom" placeholder="Votre Prénom(s)" class="input-formulaire" required>
+                                <span class="message-erreur" id="erreurPrenom"></span>
+                            </div>
+                            <div class="groupe-input">
+                                <input type="text" id="nom" name="nom" placeholder="Votre Nom" class="input-formulaire" required>
+                                <span class="message-erreur" id="erreurNom"></span>
+                            </div>
+                        </div>
+
+                        <div class="groupe-input">
+                            <input type="text" id="sujet" name="sujet" placeholder="Votre Sujet" class="input-formulaire" required>
+                            <span class="message-erreur" id="erreurSujet"></span>
+                        </div>
+
+                        <div class="groupe-input">
+                            <textarea id="message" name="message" placeholder="Votre Message" rows="6" class="input-formulaire" required></textarea>
+                            <span class="message-erreur" id="erreurMessage"></span>
+                        </div>
+
+                        <button type="submit" class="bouton-envoyer" id="boutonEnvoyer">Envoyer</button>
+                    </form>
+                </div>
+
+                <div class="infos-contact">
+                    <div class="info-email">
+                        <i class="fas fa-envelope"></i>
+                        <p>
+                        <a href="mailto:alitohmartinalabidjare@gmail.com" style="color: inherit; text-decoration: none;">
+                        alitohmartinalabidjare@gmail.com
+                        </a>
+                        </p>
+                    </div>
+
+                    <div class="reseaux-sociaux">
+                        <a href="https://www.linkedin.com/in/alitoh-martin-alabidjare-857631111/" target="_blank" rel="noopener noreferrer" class="lien-reseau" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Mtech-Togo" target="_blank" rel="noopener noreferrer" class="lien-reseau" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/22893544223" target="_blank" rel="noopener noreferrer" class="lien-reseau" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="pied-page">
+        <p>
+            Designed by <span class="accent">A. Martin ALABIDJARE</span>
+        </p>
+        <p>© Tous droits réservés - 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
